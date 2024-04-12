@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://u13uqv3wp8mi"]
+
+[ext_resource type="PackedScene" uid="uid://bllx1pqx6say5" path="res://Scenes/gubbe.tscn" id="1_r86td"]
+
+[node name="DigScene" type="Node2D"]
+
+[node name="Gubbe" parent="." instance=ExtResource("1_r86td")]

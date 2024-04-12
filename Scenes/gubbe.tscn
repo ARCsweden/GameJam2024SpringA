@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://bllx1pqx6say5"]
+
+[ext_resource type="Texture2D" uid="uid://bqumkelflnft6" path="res://Assets/Gubbe.png" id="1_33gid"]
+[ext_resource type="Texture2D" uid="uid://cyt46xmj2adwl" path="res://Assets/Spade.png" id="2_4qudx"]
+[ext_resource type="Script" path="res://Scenes/gubbe.gd" id="2_8lfbx"]
+
+[node name="Gubbe" type="Sprite2D"]
+position = Vector2(0, -26)
+texture = ExtResource("1_33gid")
+script = ExtResource("2_8lfbx")
+anim_amplitude = 5
+anim_speed = 6.0
+
+[node name="SpadeAnchor" type="Node2D" parent="."]
+position = Vector2(2, 13)
+
+[node name="Spade" type="Sprite2D" parent="SpadeAnchor"]
+texture = ExtResource("2_4qudx")
