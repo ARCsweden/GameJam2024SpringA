@@ -30,4 +30,5 @@ layout_mode = 2
 position = Vector2(125, 122)
 
 [node name="BuildUI" parent="HBoxContainer" instance=ExtResource("3_4p10d")]
+custom_minimum_size = Vector2(1920, 1080)
 layout_mode = 2
