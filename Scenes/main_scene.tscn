@@ -1,7 +1,9 @@
-[gd_scene load_steps=4 format=3 uid="uid://cywqnppfxej24"]
+[gd_scene load_steps=6 format=3 uid="uid://cywqnppfxej24"]
 
 [ext_resource type="PackedScene" uid="uid://bkt877bbf2ygu" path="res://Scenes/base_camp.tscn" id="1_bxnxk"]
+[ext_resource type="Script" path="res://Scripts/emitter.gd" id="1_rab6o"]
 [ext_resource type="PackedScene" uid="uid://u13uqv3wp8mi" path="res://Scenes/dig_scene.tscn" id="2_4jdpg"]
+[ext_resource type="PackedScene" uid="uid://44gl2y1wuvyk" path="res://progress-bar.tscn" id="2_4s5hx"]
 [ext_resource type="PackedScene" uid="uid://cqhwgehbp3jgl" path="res://Scenes/UI/build_ui.tscn" id="3_4p10d"]
 
 [node name="MainScene" type="Control"]
@@ -11,9 +13,13 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+script = ExtResource("1_rab6o")
 
 [node name="HBoxContainer" type="HBoxContainer" parent="."]
 layout_mode = 1
+
+[node name="FlagProgressBar" parent="HBoxContainer" instance=ExtResource("2_4s5hx")]
+position = Vector2(809, 272)
 
 [node name="VBoxContainer" type="VBoxContainer" parent="HBoxContainer"]
 layout_mode = 2
