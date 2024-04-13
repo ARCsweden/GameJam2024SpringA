@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="EquipmentResource" load_steps=3 format=3 uid="uid://ct7o78bqly4hr"]
 
 [ext_resource type="Texture2D" uid="uid://cgpt0pdqctwdr" path="res://icon.svg" id="1_y8w1e"]
-[ext_resource type="Script" path="res://Assets/Scripts/EquipmentRes.gd" id="2_hvl0v"]
+[ext_resource type="Script" path="res://Scripts/EquipmentRes.gd" id="2_hvl0v"]
 
 [resource]
 resource_name = "Equipment"
