@@ -1,4 +1,4 @@
-[gd_resource type="Resource" load_steps=3 format=3 uid="uid://ct7o78bqly4hr"]
+[gd_resource type="Resource" script_class="EquipmentResource" load_steps=3 format=3 uid="uid://ct7o78bqly4hr"]
 
 [ext_resource type="Texture2D" uid="uid://cgpt0pdqctwdr" path="res://icon.svg" id="1_y8w1e"]
 [ext_resource type="Script" path="res://Assets/Scripts/EquipmentRes.gd" id="2_hvl0v"]
@@ -10,3 +10,4 @@ icon = ExtResource("1_y8w1e")
 title = "Godotman"
 cost = 1000
 dig_power = 5.0
+amount = 0
