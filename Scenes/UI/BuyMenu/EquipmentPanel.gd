@@ -23,6 +23,7 @@ func buy():
 		amount.text = "Antal: " + str(res.amount)
 		State.money -= res.cost
 		Signals.emit_signal("equipment_bought",res)
+		Signals.emit_signal("money_updated",-res.cost)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
 	if State.money < res.cost:

@@ -7,6 +7,7 @@ var digs_to_depth_multiplier = 0
  
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	State.money = 500
 	Signals.connect("equipment_bought",update_equipment)
 	Signals.connect("dig",dig_once)
 	digs_to_depth_multiplier = 1/(distace*digs_per_meter / depth_per_dig)
@@ -18,6 +19,7 @@ func _process(delta):
 		var eq : EquipmentResource = equipment[eqIndex]
 		State.digs += eq.amount * eq.dig_power * delta
 	State.dig_depth  = digs_to_depth_multiplier * State.digs
+
 		 
 func update_equipment(res : EquipmentResource):
 	equipment[res.title] = res
