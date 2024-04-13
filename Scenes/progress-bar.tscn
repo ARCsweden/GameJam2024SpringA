@@ -14,13 +14,13 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_left = -791.5
+offset_left = -678.5
 offset_top = -70.0
-offset_right = 791.5
+offset_right = 678.5
 offset_bottom = 70.0
 grow_horizontal = 2
 grow_vertical = 2
-color = Color(0.866667, 0, 0.870588, 1)
+color = Color(0.176471, 0.254902, 0.172549, 1)
 
 [node name="Flag-sve" type="Sprite2D" parent="Bar"]
 z_index = 4

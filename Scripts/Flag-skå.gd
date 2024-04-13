@@ -15,4 +15,3 @@ func on_dig():
 	rate = step/2
 	position += Vector2(step,0)
 	position.x
-	print(step)
