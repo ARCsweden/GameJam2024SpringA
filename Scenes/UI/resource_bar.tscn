@@ -1,0 +1,99 @@
+[gd_scene load_steps=5 format=3 uid="uid://kjj0xs05r73l"]
+
+[ext_resource type="Texture2D" uid="uid://dl2ro5kk2iwip" path="res://Assets/Money.png" id="1_0w8mn"]
+[ext_resource type="Script" path="res://Scenes/UI/resource_bar.gd" id="1_knbn8"]
+[ext_resource type="Texture2D" uid="uid://4pb2voxm473q" path="res://Assets/Manpower.png" id="2_bcifv"]
+[ext_resource type="Texture2D" uid="uid://bm04ync33sjef" path="res://Assets/Morale.png" id="3_mygol"]
+
+[node name="ResourceBar" type="MarginContainer"]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -599.0
+offset_bottom = 41.0
+grow_horizontal = 0
+script = ExtResource("1_knbn8")
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 2
+color = Color(0, 0, 0, 1)
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -283.0
+offset_top = -16.0
+offset_right = 283.0
+offset_bottom = 16.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Money" type="MarginContainer" parent="ColorRect/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ColorRect/HBoxContainer/Money"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect/HBoxContainer/Money/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("1_0w8mn")
+stretch_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect/HBoxContainer/Money/HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "9999999999999999"
+text_direction = 2
+
+[node name="Manpower" type="MarginContainer" parent="ColorRect/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ColorRect/HBoxContainer/Manpower"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect/HBoxContainer/Manpower/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("2_bcifv")
+stretch_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect/HBoxContainer/Manpower/HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "9999999999999999"
+text_direction = 2
+
+[node name="Morale" type="MarginContainer" parent="ColorRect/HBoxContainer"]
+layout_mode = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+
+[node name="HBoxContainer" type="HBoxContainer" parent="ColorRect/HBoxContainer/Morale"]
+layout_mode = 2
+
+[node name="TextureRect" type="TextureRect" parent="ColorRect/HBoxContainer/Morale/HBoxContainer"]
+layout_mode = 2
+texture = ExtResource("3_mygol")
+stretch_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="ColorRect/HBoxContainer/Morale/HBoxContainer"]
+custom_minimum_size = Vector2(150, 0)
+layout_mode = 2
+size_flags_horizontal = 8
+text = "9999999999999999"
+text_direction = 2
