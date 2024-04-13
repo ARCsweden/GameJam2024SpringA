@@ -25,5 +25,8 @@ func buy():
 		Signals.emit_signal("equipment_bought",res)
 # Called every frame. 'delta' is the elapsed time since the previous frame.
 func _process(delta):
-	pass
+	if State.money < res.cost:
+		buyButton.disabled = true
+	else:
+		buyButton.disabled = false
 
