@@ -1,0 +1,46 @@
+[gd_scene load_steps=2 format=3 uid="uid://dd6j6se1gvmht"]
+
+[ext_resource type="Script" path="res://Scenes/UI/dig_bar.gd" id="1_kb66d"]
+
+[node name="DigBar" type="MarginContainer"]
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 5
+theme_override_constants/margin_top = 5
+theme_override_constants/margin_right = 5
+theme_override_constants/margin_bottom = 5
+script = ExtResource("1_kb66d")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="."]
+layout_mode = 2
+
+[node name="DigContainer" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/DigContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Spadtag:"
+
+[node name="SpadtagLabel" type="RichTextLabel" parent="VBoxContainer/DigContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "0"
+
+[node name="DepthContainer" type="HBoxContainer" parent="VBoxContainer"]
+custom_minimum_size = Vector2(100, 30)
+layout_mode = 2
+
+[node name="RichTextLabel" type="RichTextLabel" parent="VBoxContainer/DepthContainer"]
+custom_minimum_size = Vector2(100, 0)
+layout_mode = 2
+text = "Djup:"
+
+[node name="DjupLabel" type="RichTextLabel" parent="VBoxContainer/DepthContainer"]
+custom_minimum_size = Vector2(200, 0)
+layout_mode = 2
+text = "0 mm"
