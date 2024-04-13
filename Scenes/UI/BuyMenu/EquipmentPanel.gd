@@ -13,8 +13,3 @@ func _ready():
 	title.text = res.title	
 	dig_power_text.text = "Grävkraft: " + str(res.dig_power) + " spadtag/s" 
 	cost_text.text  = str(res.cost) +"kr"
-	
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
