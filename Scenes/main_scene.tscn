@@ -1,10 +1,11 @@
-[gd_scene load_steps=6 format=3 uid="uid://cywqnppfxej24"]
+[gd_scene load_steps=7 format=3 uid="uid://cywqnppfxej24"]
 
 [ext_resource type="PackedScene" uid="uid://bkt877bbf2ygu" path="res://Scenes/base_camp.tscn" id="1_bxnxk"]
 [ext_resource type="Script" path="res://Scenes/main_scene.gd" id="1_rrbpw"]
 [ext_resource type="PackedScene" uid="uid://u13uqv3wp8mi" path="res://Scenes/dig_scene.tscn" id="2_4jdpg"]
 [ext_resource type="PackedScene" uid="uid://44gl2y1wuvyk" path="res://Scenes/progress-bar.tscn" id="2_4s5hx"]
 [ext_resource type="PackedScene" uid="uid://cqhwgehbp3jgl" path="res://Scenes/UI/build_ui.tscn" id="3_4p10d"]
+[ext_resource type="AudioStream" uid="uid://v40qx25offpd" path="res://Assets/Music/ohboylyrics..mp3" id="6_1synw"]
 
 [node name="MainScene" type="Control"]
 layout_mode = 3
@@ -41,3 +42,7 @@ offset_right = 931.0
 offset_bottom = 585.0
 theme_override_font_sizes/font_size = 50
 text = "GRÄV BORT SKÅNE"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("6_1synw")
+autoplay = true
