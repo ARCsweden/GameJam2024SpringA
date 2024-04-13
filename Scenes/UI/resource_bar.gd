@@ -12,19 +12,20 @@ func _ready():
 	Signals.connect("manpower_updated", on_manpower_updated)
 	Signals.connect("morale_updated", on_morale_updated)
 
-func spawn_ui(value: int):
-	var diff = stat_changed_ui.instantiate()
+func spawn_ui(value: int, offset_pos: Vector2):
+	var diff: StatChangedUI = stat_changed_ui.instantiate()
 	diff.value = value
+	diff.position = offset_pos
 	add_child(diff)
 
 func on_money_updated(value: int):
 	money.text = str(State.money)
-	spawn_ui(value)
+	spawn_ui(value, Vector2(50, 0))
 
 func on_manpower_updated(value: int):
 	manpower.text = str(State.manpower)
-	spawn_ui(value)
+	spawn_ui(value, Vector2(250, 0))
 
 func on_morale_updated(value: int):
 	morale.text = str(State.morale)
-	spawn_ui(value)
+	spawn_ui(value, Vector2(450, 0))
