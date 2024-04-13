@@ -1,3 +1,3 @@
 extends Node
 
-signal on_dig
+signal dig
