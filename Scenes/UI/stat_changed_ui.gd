@@ -1,4 +1,5 @@
-extends MarginContainer
+extends Node2D
+class_name StatChangedUI
 
 @export var value: int = 1
 @export var lifetime: float = 2

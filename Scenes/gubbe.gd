@@ -10,11 +10,6 @@ func _ready():
 	Signals.connect("dig", on_dig)
 	anim_player.play("idle")
 
-
-# Called every frame. 'delta' is the elapsed time since the previous frame.
-func _process(delta):
-	pass
-
 func on_dig():
 	anim_player.play("dig", -1, anim_speed)
 	anim_player.queue("idle")

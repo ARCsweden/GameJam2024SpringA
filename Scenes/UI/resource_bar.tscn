@@ -51,8 +51,7 @@ stretch_mode = 2
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_horizontal = 8
-text = "9999999999999999"
-text_direction = 2
+text = "0"
 
 [node name="Manpower" type="MarginContainer" parent="ColorRect/HBoxContainer"]
 layout_mode = 2
@@ -73,8 +72,7 @@ stretch_mode = 2
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_horizontal = 8
-text = "9999999999999999"
-text_direction = 2
+text = "0"
 
 [node name="Morale" type="MarginContainer" parent="ColorRect/HBoxContainer"]
 layout_mode = 2
@@ -95,5 +93,4 @@ stretch_mode = 2
 custom_minimum_size = Vector2(150, 0)
 layout_mode = 2
 size_flags_horizontal = 8
-text = "9999999999999999"
-text_direction = 2
+text = "1"
