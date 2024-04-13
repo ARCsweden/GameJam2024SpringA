@@ -1,4 +1,6 @@
-[gd_scene format=3 uid="uid://cqhwgehbp3jgl"]
+[gd_scene load_steps=2 format=3 uid="uid://cqhwgehbp3jgl"]
+
+[ext_resource type="PackedScene" uid="uid://de47v2lao06h6" path="res://Scenes/UI/BuyMenu/BuyMenu.tscn" id="1_3esre"]
 
 [node name="BuildUI" type="Control"]
 layout_mode = 3
@@ -7,3 +9,6 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+
+[node name="BuyMenu" parent="." instance=ExtResource("1_3esre")]
+layout_mode = 1
