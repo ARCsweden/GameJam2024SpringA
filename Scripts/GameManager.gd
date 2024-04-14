@@ -7,7 +7,7 @@ var digs_to_depth_multiplier = 0
 var resource = load("res://Assets/Dialogues/test.dialogue")
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	State.money = 100
+	State.money = 10000000000
 	Signals.connect("equipment_bought",update_equipment)
 	Signals.connect("dig",dig_once)
 	digs_to_depth_multiplier = 1/(distace*digs_per_meter / depth_per_dig)
