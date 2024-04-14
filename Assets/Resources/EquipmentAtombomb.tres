@@ -8,5 +8,5 @@ script = ExtResource("1_amv4f")
 icon = ExtResource("1_8lami")
 title = "Atombomb"
 cost = 20000000
-dig_power = 400000.0
+dig_power = 4e+06
 amount = 0

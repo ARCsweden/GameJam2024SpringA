@@ -1,13 +1,12 @@
 [gd_resource type="Resource" script_class="EquipmentResource" load_steps=3 format=3 uid="uid://ct7o78bqly4hr"]
 
-[ext_resource type="Texture2D" uid="uid://cgpt0pdqctwdr" path="res://icon.svg" id="1_y8w1e"]
-[ext_resource type="Script" path="res://Scripts/EquipmentRes.gd" id="2_hvl0v"]
+[ext_resource type="Texture2D" uid="uid://3m51g4m5gsf3" path="res://Assets/godotman.png" id="1_4f0tp"]
+[ext_resource type="Script" path="res://Scripts/EquipmentRes.gd" id="1_l6esi"]
 
 [resource]
-resource_name = "Equipment"
-script = ExtResource("2_hvl0v")
-icon = ExtResource("1_y8w1e")
-title = "Godotman"
-cost = 500
-dig_power = 1000.0
+script = ExtResource("1_l6esi")
+icon = ExtResource("1_4f0tp")
+title = "Godotmannen"
+cost = 200000000
+dig_power = 2e+08
 amount = 0

@@ -26,6 +26,15 @@ layout_mode = 2
 [node name="FlagProgressBar" parent="HBoxContainer" instance=ExtResource("2_4s5hx")]
 position = Vector2(690, 138)
 
+[node name="FlagProgressBar2" parent="." instance=ExtResource("2_4s5hx")]
+position = Vector2(1292, 2925)
+rotation = -1.57778
+
+[node name="FlagProgressBar3" parent="." instance=ExtResource("2_4s5hx")]
+position = Vector2(4612, -2129)
+rotation = 2.50804
+scale = Vector2(1, 1)
+
 [node name="TempButton" type="Button" parent="."]
 layout_mode = 0
 offset_left = 337.0

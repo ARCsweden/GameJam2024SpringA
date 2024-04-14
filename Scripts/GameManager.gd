@@ -21,9 +21,13 @@ func _process(delta):
 	if not State.dialog_active:
 		for eqIndex in equipment:
 			var eq : EquipmentResource = equipment[eqIndex]
-			State.digs += eq.amount * eq.dig_power * delta
+			State.digs += eq.amount * eq.dig_power * manpower_multiply(State.manpower) * State.morale/100 * delta 
+			
 	State.dig_depth  = digs_to_depth_multiplier * State.digs
 
+func manpower_multiply(manpower : int):
+	return 1 + tanh(float(manpower)/1000)
+	
 func update_equipment(res : EquipmentResource):
 	equipment[res.title] = res
 
