@@ -14,7 +14,7 @@ func _ready():
 
 func spawn_ui(value: int, offset_pos: Vector2):
 	var diff: StatChangedUI = stat_changed_ui.instantiate()
-	diff.value = value
+	diff.set_value(value)
 	diff.position = offset_pos
 	add_child(diff)
 
