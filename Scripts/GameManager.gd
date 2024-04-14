@@ -9,7 +9,7 @@ var digs_to_depth_multiplier = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	# Set up starting resources
-	State.add_money(100000000)
+	State.add_money(100)
 	State.add_manpower(1)
 	State.add_morale(100)
 	Signals.connect("equipment_bought",update_equipment)
