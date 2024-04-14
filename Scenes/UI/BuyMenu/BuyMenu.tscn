@@ -1,9 +1,14 @@
-[gd_scene load_steps=5 format=3 uid="uid://de47v2lao06h6"]
+[gd_scene load_steps=10 format=3 uid="uid://de47v2lao06h6"]
 
 [ext_resource type="PackedScene" uid="uid://bfknp1fl0yne6" path="res://Scenes/UI/BuyMenu/EquipmentPanel.tscn" id="1_pfy2o"]
 [ext_resource type="Script" path="res://Scenes/UI/BuyMenu/BuyMenu.gd" id="1_yc5rr"]
-[ext_resource type="Resource" uid="uid://ct7o78bqly4hr" path="res://Assets/Resources/EquipmentGodotman.tres" id="2_fg4qu"]
 [ext_resource type="Resource" uid="uid://ckya3ckdjl8hm" path="res://Assets/Resources/EquipmentSpade.tres" id="2_pyjm1"]
+[ext_resource type="Resource" uid="uid://ci4u8mg62p6rd" path="res://Assets/Resources/EquipmentJackhammer.tres" id="4_33t6t"]
+[ext_resource type="Resource" uid="uid://ds26nu3teucse" path="res://Assets/Resources/EquipmentDynamit.tres" id="5_ju1hm"]
+[ext_resource type="Resource" uid="uid://dlp2l30omeobf" path="res://Assets/Resources/EquipmentLitenGravmaskin.tres" id="6_08f8h"]
+[ext_resource type="Resource" uid="uid://cv1vvt2dpy3cj" path="res://Assets/Resources/EquipmentGravmaskin.tres" id="7_nf2id"]
+[ext_resource type="Resource" uid="uid://dpspol4hv1c12" path="res://Assets/Resources/EquipmentDiamatborr.tres" id="8_h3kah"]
+[ext_resource type="Resource" uid="uid://csv8tjpds81b2" path="res://Assets/Resources/EquipmentAtombomb.tres" id="9_exaj4"]
 
 [node name="BuyMenu" type="Control"]
 layout_mode = 3
@@ -34,24 +39,24 @@ res = ExtResource("2_pyjm1")
 
 [node name="EquipmentPanel2" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_pfy2o")]
 layout_mode = 2
-res = ExtResource("2_fg4qu")
+res = ExtResource("4_33t6t")
 
 [node name="EquipmentPanel3" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_pfy2o")]
 layout_mode = 2
-res = ExtResource("2_fg4qu")
+res = ExtResource("5_ju1hm")
 
 [node name="EquipmentPanel4" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_pfy2o")]
 layout_mode = 2
-res = ExtResource("2_fg4qu")
+res = ExtResource("6_08f8h")
 
 [node name="EquipmentPanel5" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_pfy2o")]
 layout_mode = 2
-res = ExtResource("2_fg4qu")
+res = ExtResource("7_nf2id")
 
 [node name="EquipmentPanel6" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_pfy2o")]
 layout_mode = 2
-res = ExtResource("2_fg4qu")
+res = ExtResource("8_h3kah")
 
 [node name="EquipmentPanel7" parent="ScrollContainer/VBoxContainer" instance=ExtResource("1_pfy2o")]
 layout_mode = 2
-res = ExtResource("2_fg4qu")
+res = ExtResource("9_exaj4")

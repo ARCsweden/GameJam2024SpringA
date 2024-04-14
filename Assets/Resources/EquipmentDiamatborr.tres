@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EquipmentResource" load_steps=3 format=3 uid="uid://dpspol4hv1c12"]
+
+[ext_resource type="Script" path="res://Scripts/EquipmentRes.gd" id="1_okhrc"]
+[ext_resource type="Texture2D" uid="uid://07y8dt5nuu7b" path="res://Assets/DiamondDrill.png" id="1_uftv7"]
+
+[resource]
+script = ExtResource("1_okhrc")
+icon = ExtResource("1_uftv7")
+title = "Diamantborr"
+cost = 1000000
+dig_power = 10000.0
+amount = 0

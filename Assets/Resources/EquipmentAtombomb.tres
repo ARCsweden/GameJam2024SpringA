@@ -1,0 +1,12 @@
+[gd_resource type="Resource" script_class="EquipmentResource" load_steps=3 format=3 uid="uid://csv8tjpds81b2"]
+
+[ext_resource type="Texture2D" uid="uid://bs6nsjnf6721f" path="res://Assets/Nuke.png" id="1_8lami"]
+[ext_resource type="Script" path="res://Scripts/EquipmentRes.gd" id="1_amv4f"]
+
+[resource]
+script = ExtResource("1_amv4f")
+icon = ExtResource("1_8lami")
+title = "Atombomb"
+cost = 20000000
+dig_power = 400000.0
+amount = 0
