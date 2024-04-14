@@ -94,3 +94,20 @@ else:
 	Svensson: Fint väder vi har det!
 
 => END
+~ extas
+#1
+Syrran: Hej storebror, vad gör du?
+Svensson: Inget särskilt, bara gräver bort Skåne.
+Syrran: Okej! Så kul :)
+	% Syrran: Kan jag få låna lite pengar?
+		- Svensson: Aboslut! här har du 1000 spän
+			% Syrran: Åhh, vad 
+		- Svensson: Ja, blir det bra med en hundring?
+		- Svensson: Nja, jag behöver nog spara på pengarna just nu
+	% Syrran: Då ska jag inte störa dig mer. 
+#2
+#3
+#4
+#5
+#6
+=> END

@@ -9,7 +9,7 @@
 [ext_resource type="Resource" uid="uid://cv1vvt2dpy3cj" path="res://Assets/Resources/EquipmentGravmaskin.tres" id="7_nf2id"]
 [ext_resource type="Resource" uid="uid://dpspol4hv1c12" path="res://Assets/Resources/EquipmentDiamatborr.tres" id="8_h3kah"]
 [ext_resource type="Resource" uid="uid://csv8tjpds81b2" path="res://Assets/Resources/EquipmentAtombomb.tres" id="9_exaj4"]
-[ext_resource type="Resource" uid="uid://ct7o78bqly4hr" path="res://Assets/Resources/EquipmentGodotMan.tres" id="10_ewml5"]
+[ext_resource type="Resource" uid="uid://ct7o78bqly4hr" path="res://Assets/Resources/EquipmentGodotman.tres" id="10_ewml5"]
 
 [node name="BuyMenu" type="Control"]
 layout_mode = 3
