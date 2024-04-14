@@ -21,10 +21,6 @@ State="*res://Scripts/State.gd"
 Signals="*res://Scripts/Signals.gd"
 DialogueManager="*res://addons/dialogue_manager/dialogue_manager.gd"
 
-[dialogue_manager]
-
-general/custom_test_scene_path="res://addons/dialogue_manager/test_scene.tscn"
-
 [display]
 
 window/size/viewport_width=1920

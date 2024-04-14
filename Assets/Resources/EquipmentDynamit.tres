@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="EquipmentResource" load_steps=2 format=3 uid="uid://ds26nu3teucse"]
+
+[ext_resource type="Script" path="res://Scripts/EquipmentRes.gd" id="1_4ra1x"]
+
+[resource]
+script = ExtResource("1_4ra1x")
+title = "Dynamit"
+cost = 10000
+dig_power = 40.0
+amount = 0
