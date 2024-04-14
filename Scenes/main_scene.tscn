@@ -30,9 +30,19 @@ position = Vector2(690, 138)
 position = Vector2(1292, 2925)
 rotation = -1.57778
 
+[node name="FlagProgressBar4" parent="." instance=ExtResource("2_4s5hx")]
+position = Vector2(6312, 5790)
+rotation = -2.26195
+scale = Vector2(1, 1)
+
 [node name="FlagProgressBar3" parent="." instance=ExtResource("2_4s5hx")]
 position = Vector2(4612, -2129)
 rotation = 2.50804
+
+[node name="FlagProgressBar5" parent="." instance=ExtResource("2_4s5hx")]
+position = Vector2(-2808, 9420)
+rotation = -1.26711
+scale = Vector2(1, 1)
 
 [node name="TempButton" type="Button" parent="."]
 layout_mode = 0
@@ -45,6 +55,7 @@ text = "GRÄV BORT SKÅNE"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_1synw")
+autoplay = true
 
 [node name="GameManager" type="Node2D" parent="."]
 script = ExtResource("7_2bar3")
