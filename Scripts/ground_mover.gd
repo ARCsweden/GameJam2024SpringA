@@ -65,7 +65,7 @@ func stepper():
 	var col  = Color(randf(), randf(), randf())
 	
 	create_blob( 0,
-	get_viewport_rect().size[1]-dist*(click)+90,
+	get_viewport_rect().size[1]-dist*(click)+120,
 	col)
 	click+=1
 func _on_button_pressed():

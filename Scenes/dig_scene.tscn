@@ -1,13 +1,17 @@
-[gd_scene load_steps=6 format=3 uid="uid://u13uqv3wp8mi"]
+[gd_scene load_steps=7 format=3 uid="uid://u13uqv3wp8mi"]
 
 [ext_resource type="PackedScene" uid="uid://bllx1pqx6say5" path="res://Scenes/gubbe.tscn" id="1_r86td"]
 [ext_resource type="PackedScene" uid="uid://dd6j6se1gvmht" path="res://Scenes/UI/dig_bar.tscn" id="2_1so31"]
 [ext_resource type="Texture2D" uid="uid://c76jjnpvcsk1b" path="res://Assets/Hole.png" id="2_e3wja"]
 [ext_resource type="Script" path="res://Scenes/Control.gd" id="2_njkhj"]
+[ext_resource type="PackedScene" uid="uid://ck4isxhdsndp5" path="res://Scenes/moving_ground.tscn" id="5_hahpy"]
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xc5ad"]
 
 [node name="DigScene" type="Node2D"]
+
+[node name="moving_ground" parent="." instance=ExtResource("5_hahpy")]
+position = Vector2(0, 60)
 
 [node name="DigBar" parent="." instance=ExtResource("2_1so31")]
 offset_left = -152.0
