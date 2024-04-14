@@ -33,7 +33,7 @@ elif State.random_int == 1:
 		do State.add_manpower(-5)
 		Random fågel: Pip (Dina mannar gör sitt bästa, men tyvärr går de förlorade)
 		Svensson: Aja, man måste knäcka några ägg när man gör omelett!
-	- Muta dem! (-1000kr) [if money >= 1000]
+	- Muta dem! (-1000kr) [if State.money >= 1000]
 		do State.add_money(-1000)
 		Random fågel: Pip (Det gör ont i kassan, men du lyckas muta iväg skåningarna)
 		Svensson: För en god sak!
