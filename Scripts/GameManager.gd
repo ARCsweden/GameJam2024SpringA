@@ -11,8 +11,7 @@ func _ready():
 	# Set up starting resources
 	State.add_money(100)
 	State.add_manpower(1)
-	State.add_morale(1)
-
+	State.add_morale(1)s
 	Signals.connect("equipment_bought",update_equipment)
 	Signals.connect("dig",dig_once)
 	digs_to_depth_multiplier = 1 / (distace * digs_per_meter / depth_per_dig)

@@ -1,14 +1,60 @@
-[gd_scene load_steps=3 format=3 uid="uid://u13uqv3wp8mi"]
+[gd_scene load_steps=6 format=3 uid="uid://u13uqv3wp8mi"]
 
 [ext_resource type="PackedScene" uid="uid://bllx1pqx6say5" path="res://Scenes/gubbe.tscn" id="1_r86td"]
 [ext_resource type="PackedScene" uid="uid://dd6j6se1gvmht" path="res://Scenes/UI/dig_bar.tscn" id="2_1so31"]
+[ext_resource type="Texture2D" uid="uid://c76jjnpvcsk1b" path="res://Assets/Hole.png" id="2_e3wja"]
+[ext_resource type="Script" path="res://Scenes/Control.gd" id="2_njkhj"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_xc5ad"]
 
 [node name="DigScene" type="Node2D"]
-
-[node name="Gubbe" parent="." instance=ExtResource("1_r86td")]
 
 [node name="DigBar" parent="." instance=ExtResource("2_1so31")]
 offset_left = -152.0
 offset_top = 82.0
 offset_right = 162.0
 offset_bottom = 156.0
+
+[node name="Control" type="Control" parent="."]
+clip_contents = true
+layout_mode = 3
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -34.0
+offset_top = -32.0
+offset_right = 34.0
+grow_horizontal = 2
+grow_vertical = 0
+script = ExtResource("2_njkhj")
+
+[node name="PanelContainer" type="PanelContainer" parent="Control"]
+clip_contents = true
+layout_mode = 1
+anchors_preset = 7
+anchor_left = 0.5
+anchor_top = 1.0
+anchor_right = 0.5
+anchor_bottom = 1.0
+offset_left = -34.0
+offset_top = -600.0
+offset_right = 30.0
+grow_horizontal = 2
+grow_vertical = 0
+theme_override_styles/panel = SubResource("StyleBoxEmpty_xc5ad")
+
+[node name="TextureRect" type="TextureRect" parent="Control/PanelContainer"]
+modulate = Color(1, 1, 1, 0.439216)
+layout_mode = 2
+size_flags_horizontal = 4
+size_flags_vertical = 4
+texture = ExtResource("2_e3wja")
+stretch_mode = 3
+
+[node name="Node2D" type="Node2D" parent="."]
+position = Vector2(0, -8.495)
+scale = Vector2(1.5, 1.5)
+
+[node name="Gubbe" parent="Node2D" instance=ExtResource("1_r86td")]
