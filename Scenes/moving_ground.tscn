@@ -5,7 +5,6 @@
 [node name="moving_ground" type="Node2D"]
 
 [node name="Button" type="Button" parent="."]
-visible = false
 offset_left = 393.0
 offset_top = 146.0
 offset_right = 504.0
