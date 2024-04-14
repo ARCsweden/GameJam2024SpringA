@@ -9,9 +9,9 @@ var digs_to_depth_multiplier = 0
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	# Set up starting resources
-	State.add_money(100)
+	State.add_money(1000000000000)
 	State.add_manpower(1)
-	State.add_morale(1)s
+	State.add_morale(1)
 	Signals.connect("equipment_bought",update_equipment)
 	Signals.connect("dig",dig_once)
 	digs_to_depth_multiplier = 1 / (distace * digs_per_meter / depth_per_dig)
