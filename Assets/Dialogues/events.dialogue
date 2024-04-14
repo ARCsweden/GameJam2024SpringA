@@ -7,7 +7,7 @@ Svensson: Då sätter vi igång!
 ~ random_event
 
 # Increase when adding new events
-do State.get_random_int(10)
+do State.get_random_int(11)
 
 if State.random_int == 0:
 	Svensson: Kolla, här kommer min brorsa!
@@ -153,21 +153,32 @@ elif State.random_int == 9:
 	Random fågel: Pip (Det verkar vara en skattkista! Säkert från nått krig med Danmark)
 	Svensson: Ka-ching!
 	do State.add_money(10000)
+elif State.random_int == 10:
+	Syrran: Hej storebror, vad gör du?
+	Svensson: Inget särskilt, bara gräver bort Skåne.
+	Syrran: Okej! Så kul :)
+	do State.get_random_int(2)
+	if State.random_int == 0:
+		Syrran: Kan jag få låna lite pengar?
+		- Svensson: Aboslut! här har du 1000 spänn[if State.money >= 1000]
+			Syrran: Åhh, vad snällt, då hänger jag här med er grabbar ett tag
+			do State.add_manpower(1000)
+			do State.add_money(-1000)
+		- Svensson: Ja, blir det bra med en hundring?[if State.money >= 100]
+			Syrran: Tack brorsan så snällt!
+			do State.add_morale(10)
+			do State.add_money(-100)
+		- Svensson: Nja, jag behöver nog spara på pengarna just nu
+	else:
+		Syrran: Då ska jag inte störa dig mer. 
 else:
 	Svensson: Fint väder vi har det!
 
 => END
 ~ extas
 #1
-#Syrran: Hej storebror, vad gör du?
-#Svensson: Inget särskilt, bara gräver bort Skåne.
-#Syrran: Okej! Så kul :)
-#	% Syrran: Kan jag få låna lite pengar?
-#		- Svensson: Aboslut! här har du 1000 spän
-#			% Syrran: Åhh, vad 
-#		- Svensson: Ja, blir det bra med en hundring?
-#		- Svensson: Nja, jag behöver nog spara på pengarna just nu
-#	% Syrran: Då ska jag inte störa dig mer. 
+
+
 #2
 #3
 #4

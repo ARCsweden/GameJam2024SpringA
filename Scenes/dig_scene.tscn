@@ -11,7 +11,7 @@
 [node name="DigScene" type="Node2D"]
 
 [node name="moving_ground" parent="." instance=ExtResource("5_hahpy")]
-position = Vector2(0, 60)
+position = Vector2(0, 140)
 
 [node name="DigBar" parent="." instance=ExtResource("2_1so31")]
 offset_left = -152.0
