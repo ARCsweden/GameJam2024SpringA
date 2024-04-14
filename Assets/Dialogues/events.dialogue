@@ -6,6 +6,91 @@ Svensson: Då sätter vi igång!
 
 ~ random_event
 
-Svensson: Fint väder vi har det!
+# Increase when adding new events
+do State.get_random_int(10)
+
+if State.random_int == 0:
+	Svensson: Kolla, här kommer min brorsa!
+	Greger: Hej hopp i lingonskogen Svensson! Vad göres?
+	% Svensson: Här gräves, för landet i tiden!
+	% Svensson: Skåne ska bort, ett spadtag i taget!
+	% Svensson: Min plikt!
+	% Svensson: Ja du ser jag har ett litet hobbyprojekt...
+	Random fågel: Pip (Du inser att du kanske kan övertala Greger att hjälpa dig)
+	- Muta med en öl (-50kr) [if State.money >= 50]
+		Svensson: Vad sägs om en öl?
+		Greger: Du hade mig vid öl.
+		Svensson: Grabba en spade.
+		do State.add_money(-50)
+		do State.add_manpower(1)
+	- Nee, jag fixar detta själv
+		Svensson: Men nu måste jag fortsätta!
+		Greger: Jahaja.
+elif State.random_int == 1:
+	Random fågel: Pip (Du ser en grupp arga skåningar på horisonten)
+	Skåning: Hrmbhsbhabbgh! (Vad fasen håller du på med?!)
+	- Skicka några kompanjoner för att distrahera! (-5 manpower) [if State.manpower >= 5]
+		do State.add_manpower(-5)
+		Random fågel: Pip (Dina mannar gör sitt bästa, men tyvärr går de förlorade)
+		Svensson: Aja, man måste knäcka några ägg när man gör omelett!
+	- Muta dem! (-1000kr) [if money >= 1000]
+		do State.add_money(-1000)
+		Random fågel: Pip (Det gör ont i kassan, men du lyckas muta iväg skåningarna)
+		Svensson: För en god sak!
+	- Försök ignorera dem (-100% moral)
+		do State.add_morale(-100)
+		Random fågel: Pip (Du kämpar på, men det är väldigt störigt)
+		Random fågel: Pip (Till sist går skåningarna iväg)
+elif State.random_int == 2:
+	Random fågel: Pip (Medans du gräver möts du av en underlig syn)
+	Random fågel: Pip (Ett gäng svenska grabbar håller på att fylla i din fåra!)
+	Svensson: Men vad gör ni?
+	Aktivister: Vi bygger en mur mot Skåne!
+	Random fågel: Pip (Detta var ju ett tråkigt bakslag)
+elif State.random_int == 3:
+	Random fågel: Pip (Du ser Stadsministern komma gående)
+	Stadsministern: Jaha vad gör vi här då?
+	% Svensson: Gräver bort Skåne!
+	% Svensson: Mitt bästa!
+	Stadsministern: Jamenjahaja vad trevligt!
+	Stadsministern: Fortsätt jobba. Här kommer skatteåterbäringen!
+	Random fågel: Pip (Stadsministern lämpar ner lite pengar åt dig i ditt hål)
+	do State.add_money(ceil(1000000000 * State.dig_depth))
+elif State.random_int == 4:
+	Svensson: Nä, nu skulle det sitta bra med en bärs!
+	- Köp bärs (-50kr) [if State.money >= 50]
+		Svensson: Mer öl till folket!
+		do State.add_morale(20)
+	- Har inte råd
+		Svensson: Får klara mig utan...
+elif State.random_int == 5:
+	Random fågel: Pip (Det börjar regna)
+	Svensson: Fan va trist.
+	do State.add_morale(-10)
+elif State.random_int == 6:
+	Random fågel: Pip (Det kommer en grupp aktivister från svenska sidan och inspekterar ditt projekt)
+	if State.dig_depth >= 100:
+		Svensson: TODO
+	elif State.dig_depth >= 10:
+		Svensson: TODO
+	elif State.dig_depth >= 1:
+		Svensson: TODO
+	elif State.dig_depth >= 0.1:
+		Svensson: TODO
+	elif State.dig_depth >= 0.01:
+		Svensson: TODO
+	elif State.dig_depth >= 0.001:
+		Svensson: TODO
+	else:
+		Aktivist: Det här såg ju inte jätteimponerande ut.
+		Svensson: TODO
+elif State.random_int == 7:
+	Svensson: TODO
+elif State.random_int == 8:
+	Svensson: TODO
+elif State.random_int == 9:
+	Svensson: TODO
+else:
+	Svensson: Fint väder vi har det!
 
 => END

@@ -6,9 +6,11 @@ class_name StatChangedUI
 @export var decay_dist: float = 10.0
 
 @onready var label: RichTextLabel = $RichTextLabel
+var text_to_set: String = ""
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
+	label.text = text_to_set
 	var color = Color(1.0, 0.0, 0.0, 1.0) # RED
 	if value > 0:
 		color = Color(0.0, 1.0, 0.0, 1.0) # GREEN
@@ -20,3 +22,7 @@ func _ready():
 	tween.parallel().tween_property(label, "modulate", color, lifetime)
 	tween.parallel().tween_property(label, "position", final_pos, lifetime)
 	tween.tween_callback(queue_free) # Delete the object after done animating
+
+func set_value(value_to_set):
+	value = value_to_set
+	text_to_set = str(value)
