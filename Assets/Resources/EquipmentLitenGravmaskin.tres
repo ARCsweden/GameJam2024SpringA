@@ -1,9 +1,11 @@
-[gd_resource type="Resource" script_class="EquipmentResource" load_steps=2 format=3 uid="uid://dlp2l30omeobf"]
+[gd_resource type="Resource" script_class="EquipmentResource" load_steps=3 format=3 uid="uid://dlp2l30omeobf"]
 
 [ext_resource type="Script" path="res://Scripts/EquipmentRes.gd" id="1_b5278"]
+[ext_resource type="Texture2D" uid="uid://d1ai4bgbo4cx4" path="res://Assets/LitenDigger.png" id="1_nwbs1"]
 
 [resource]
 script = ExtResource("1_b5278")
+icon = ExtResource("1_nwbs1")
 title = "Liten Grävmaskin"
 cost = 60000
 dig_power = 400.0

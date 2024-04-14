@@ -46,7 +46,6 @@ text = "GRÄV BORT SKÅNE"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("6_1synw")
-autoplay = true
 
 [node name="GameManager" type="Node2D" parent="."]
 script = ExtResource("7_2bar3")
