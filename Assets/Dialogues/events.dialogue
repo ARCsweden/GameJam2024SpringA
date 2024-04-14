@@ -160,11 +160,11 @@ elif State.random_int == 10:
 	do State.get_random_int(2)
 	if State.random_int == 0:
 		Syrran: Kan jag få låna lite pengar?
-		- Svensson: Aboslut! här har du 1000 spänn[if State.money >= 1000]
+		- Svensson: Aboslut! här har du 1000 spänn [if State.money >= 1000]
 			Syrran: Åhh, vad snällt, då hänger jag här med er grabbar ett tag
 			do State.add_manpower(1000)
 			do State.add_money(-1000)
-		- Svensson: Ja, blir det bra med en hundring?[if State.money >= 100]
+		- Svensson: Ja, blir det bra med en hundring? [if State.money >= 100]
 			Syrran: Tack brorsan så snällt!
 			do State.add_morale(10)
 			do State.add_money(-100)
@@ -174,14 +174,4 @@ elif State.random_int == 10:
 else:
 	Svensson: Fint väder vi har det!
 
-=> END
-~ extas
-#1
-
-
-#2
-#3
-#4
-#5
-#6
 => END
