@@ -6,6 +6,8 @@ var money: int = 0
 var manpower: int = 0
 var morale: float = 0.0
 
+var dialog_active = true
+
 func add_money(amount: int):
 	money += amount
 	Signals.emit_signal("money_updated", amount)
