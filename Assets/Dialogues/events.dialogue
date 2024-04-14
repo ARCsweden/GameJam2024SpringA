@@ -55,7 +55,7 @@ elif State.random_int == 3:
 	Stadsministern: Jamenjahaja vad trevligt!
 	Stadsministern: Fortsätt jobba. Här kommer skatteåterbäringen!
 	Random fågel: Pip (Stadsministern lämpar ner lite pengar åt dig i ditt hål)
-	do State.add_money(ceil(1000000000 * State.dig_depth))
+	do State.add_money(1000000000 * State.dig_depth)
 elif State.random_int == 4:
 	Svensson: Nä, nu skulle det sitta bra med en bärs!
 	- Köp bärs (-50kr) [if State.money >= 50]
@@ -68,28 +68,91 @@ elif State.random_int == 5:
 	Svensson: Fan va trist.
 	do State.add_morale(-10)
 elif State.random_int == 6:
-	Random fågel: Pip (Det kommer en grupp aktivister från svenska sidan och inspekterar ditt projekt)
+	Random fågel: Pip (Det närmar sig en grupp från svenska sidan och för att inspektera ditt projekt)
 	if State.dig_depth >= 100:
-		Svensson: TODO
+		Random fågel: Pip (Det är ett gäng blåa gubbar)
+		Godotman: ...
+		Svensson: Goddagens!
+		Godotman: ...
+		Svensson: Jag fortsätter väl gräva då.
+		Random fågel: Pip (En portal öppnas brevid blåa gubben. Delegationen går igenom och försvinner)
+		Random fågel: Pip (Portalen är fortfarande öppen dock, och det trillar ut en konstant ström med pengar från den. Najs!)
+		do State.add_patreon(10000000000000)
 	elif State.dig_depth >= 10:
-		Svensson: TODO
+		Random fågel: Pip (Verkar vara en flygande bil. Ut kliver världens rikaste man)
+		Stig Stenrik: Tja, hade vägarna förbi! Undrar om du kan hjälpa mig med ett experiment.
+		Svensson: Jovars, ska väl gå. Vad undrade du över?
+		Stig Stenrik: Jag vill veta om alla mina pengar kan fylla din grop.
+		Svensson: Det är bara att börja hiva i!
+		Random fågel: Pip (Stig Stenrik sveper iväg i sin flygande bil. Efter en stund kommer han förbi med första lasset)
+		do State.add_patreon(100000000000)
 	elif State.dig_depth >= 1:
-		Svensson: TODO
+		Random fågel: Pip (Ser ut att vara en delegation från förenta nationerna)
+		Svensson: Men goddagens!
+		UN rep: 我们想赞助您的项目
+		Svensson: Va?
+		UN rep2: Haluamme sponsoroida projektiasi!
+		Svensson: Jag fortsätter gräva då...
+		UN rep3: Tellement motivant!
+		do State.add_patreon(10000000000)
+		Random fågel: Pip (Det plingar till i telefonen, de verkar som du fått en ny sponsor!)
 	elif State.dig_depth >= 0.1:
-		Svensson: TODO
+		Random fågel: Pip (Jag vill också sponsra!)
+		Svensson: Huh? Hörde jag något?
+		Random fågel: Pip! (Kom igen, jag har suttit här sen du började, sluta ignorera mig!)
+		Svensson: Äh det var nog inget...
+		Random fågel: Pip (Se om du märker det här då!)
+		Svensson: Oj, det var mycket pengar! En ny mysterisk sponsor...
+		do State.add_patreon(100000000)
 	elif State.dig_depth >= 0.01:
-		Svensson: TODO
+		Random fågel: Pip (Det är Stadsministern)
+		Stadsministern: Men ser man, det här börjar ju bli nått. Snart går hålet över skokanten!
+		Svensson: Jo, har hållt på ett tag nu, men det är svårt utan bidrag.
+		Stadsministern: Men det fixar vi! Jag fifflar lite pengar från försvarsbudgeten...
+		do State.add_patreon(1000000)
 	elif State.dig_depth >= 0.001:
-		Svensson: TODO
+		Börshaj: Jag är börshaj och ser potential i det du gör!
+		Svensson: Det var ju kul!
+		Börshaj: Jag vill investera i ditt bolag så jag kan få bra cashout när Skåne väl är borta.
+		Svensson: Men jag har inget bolag...
+		Börshaj: Håll käft och ta mina pengar!
+		do State.add_patreon(10000)
 	else:
 		Aktivist: Det här såg ju inte jätteimponerande ut.
-		Svensson: TODO
+		Svensson: Men jag gör ju mitt bästa!
+		Aktivist: Men då så! Här får du lite sponsring!
+		Random fågel: Pip (Du har fått en ny följare på Patreon)
+		do State.add_patreon(1000)
 elif State.random_int == 7:
-	Svensson: TODO
+	if State.dig_depth >= 0.1:
+		Random fågel: Pip (När du kommer till kusten möts du av en strandad färja)
+		Random fågel: Pip (Kaptenen kommer fram till dig)
+		Kapten: Halloj! Jag har ett gäng barnarbetare som skulle till järngruvorna i Kiruna. Tyvärr verkar vi gått på grund.
+		Svensson: Men det finns ju massa att gräva här!
+		Kapten: Fasen, det har du rätt i! Då drar jag, ta hand om dem åt mig.
+		do State.add_manpower(3562)
+	else:
+		Random fågel: Pip (En buss rullar in med ett gäng hockeyspelare)
+		Tränare: Dåså gubbar, börja gräva! Kommer stärka både armarna och karaktären!
+		Svensson: Välkomna.
+		do State.add_manpower(22)
 elif State.random_int == 8:
-	Svensson: TODO
+	Random fågel: Pip (Det kommer förbi en brevbärare som lämpar av ett kuvert)
+	Random fågel: Pip (Det ser ut som om du vunnit på lotto!)
+	- Spara pengarna (+1000000kr)
+		Svensson: Den som spar han har! Har mer pengar till spadar.
+		do State.add_money(1000000)
+	- Hyr in en bemanningsfirma för att gräva (+1000 manpower)
+		do State.add_manpower(1000)
+	- Köp bärs och pizza för allt (+200 moral)
+		Svensson: Bärs och bröd åt folket!
+		do State.add_morale(200)
 elif State.random_int == 9:
-	Svensson: TODO
+	Random fågel: Pip (Du sätter ner spaden och den slår emot något hårt)
+	Svensson: Vad kan detta vara då?
+	Random fågel: Pip (Det verkar vara en skattkista! Säkert från nått krig med Danmark)
+	Svensson: Ka-ching!
+	do State.add_money(10000)
 else:
 	Svensson: Fint väder vi har det!
 
